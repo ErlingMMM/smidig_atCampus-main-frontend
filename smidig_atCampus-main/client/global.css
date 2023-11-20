@@ -1,0 +1,238 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.activeView {
+  @apply bg-yellow-500;
+}
+
+/*Button onclick animation*/
+
+.material-arrow-btn {
+  background: radial-gradient(
+    circle,
+    white 1%,
+    lightskyblue 10%,
+    rgba(0, 0, 0, 0) 0%
+  );
+  background-size: 0%;
+  background-position: 50% 50%;
+  
+}
+
+.onclick-animation-arrow-btn {
+  transition: all 0.8s cubic-bezier(0.75, 0.37, 0.83, 1);
+  background-size: 5000%;
+  }
+
+.border-arrow-btn {
+  border: solid 2px #4caf50;
+}
+
+
+/*No uanswered questions on the page animation*/
+
+.right-arrow-btn-animation-fill {
+  content: "";
+  box-shadow: inset 0 0 0 0px #16a085;
+  animation-name: fill-animation;
+  animation-duration: 2s;
+}
+
+@keyframes fill-animation {
+  100% {
+    box-shadow: inset 0 0 0 60px #16a085;
+  }
+}
+
+.background-post-fill {
+  background: #16a085;
+}
+
+/*Greyed out animation next page btn*/
+
+.gray-out-animate {
+  border-color: rgba(209, 213, 219);
+  
+  background-image: linear-gradient(
+    45deg,
+   rgba(209, 213, 219) 50%,
+   transparent 50%
+  );
+  background-position: 100%;
+  background-size: 400%;
+  animation-duration: 1s;
+  animation-name: gray-animation;
+}
+
+@keyframes gray-animation {
+  100% {
+    background-position: 0;
+  }
+}
+
+/*Next btn onclick bubble animation*/
+.material-arrow-btn.colored-background {
+  background-color: #16a085;
+  background-image: radial-gradient(
+    circle,
+    #1abc9c 5%,
+    #3ee4c4 15%,
+    rgba(0, 0, 0, 0) 30%
+  );
+}
+
+
+
+
+input::placeholder {
+  color: white;
+  padding-left: 0.5rem;
+  }
+
+
+
+  
+  .placeholderHoverMatching:hover::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #f79256;
+  }
+  .placeholderHoverMatching:hover::-moz-placeholder { /* Firefox 19+ */
+    color: #f79256;
+  }
+  .placeholderHoverMatching:hover:-ms-input-placeholder { /* IE 10+ */
+    color: #f79256;
+  }
+  .placeholderHoverMatching:hover:-moz-placeholder { /* Firefox 18- */
+    color: #f79256;
+  }
+
+
+  .placeholderHoverSubject:hover::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: black;
+  }
+  .placeholderHoverSubject:hover::-moz-placeholder { /* Firefox 19+ */
+    color: black;
+  }
+  .placeholderHoverSubject:hover:-ms-input-placeholder { /* IE 10+ */
+    color: black;
+  }
+  .placeholderHoverSubject:hover:-moz-placeholder { /* Firefox 18- */
+    color: black;
+  }
+
+
+
+  
+
+
+
+
+
+/*Right arrow btn main code*/
+.right-arrow-btn-animation-position {
+  position: relative;
+  }
+
+
+.onclick-animation-right-btn {
+  animation-name: next-btn;
+  animation-duration: 0.8s;
+}
+
+@keyframes next-btn {
+  100% {
+    background-size: 200%;
+  }
+}
+
+
+
+/**************SCROLL BARS*******************/
+::-webkit-scrollbar {
+  background-color: transparent;
+  margin-left: 2rem;
+  width: 14px;
+  
+}
+
+::-webkit-scrollbar-thumb {
+  border: 4px solid rgba(0, 0, 0, 0);
+  
+  /*Transparent color to make the egdes dissapair*/
+  background-clip: padding-box;
+  /*Slim thumb*/
+  border-radius: 999px;
+  /*Round egdes*/
+  background-color: #16a085;
+  
+}
+
+
+.moveReceipt{
+  position: relative;
+  animation-timing-function: ease-in-out;
+}
+
+.firstMoveReceipt{
+ animation: receiptMoveFirst 1.8s 1;
+} 
+
+.secondMoveReceipt{
+  animation: receiptMoveSecond 1.7s 1;
+ } 
+
+ .thirdMoveReceipt{
+  animation: receiptMoveThird 1.8s 1;
+ } 
+
+@keyframes receiptMoveFirst {
+  0% {right: 800px;}
+ 100% {right:0px;}
+}
+
+@keyframes receiptMoveSecond {
+   0% {top: 1500px;}
+  100% {top:0px;}
+ }
+
+@keyframes receiptMoveThird {
+   0% {left: 800px;}
+  100% {left:0px;}
+ }
+
+ .opacityConfetti{
+  animation: opacityConfettiAnimation 7s 1;
+ }
+
+ @keyframes opacityConfettiAnimation {
+  50% {opacity: 0.5}
+ 100% {opacity: 0}
+}
+ 
+
+.opacityReceiptText {
+  animation: opacityReceiptAnimation 5s 1;
+}
+
+@keyframes opacityReceiptAnimation {
+0% {opacity: 0}
+100% {opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

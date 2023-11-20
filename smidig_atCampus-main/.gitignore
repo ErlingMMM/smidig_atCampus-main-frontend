@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/atCampus_WebApi/bin
+/atCampus_WebApi/.vs
+/atCampus_WebApi/obj
+/atCampus_WebApi/atCampus_WebApi.csproj.user

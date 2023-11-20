@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@headlessui/react": "^0.0.0-insiders.1d53ac3",
+    "@heroicons/react": "^1.0.5",
+    "date-fns": "^2.27.0",
+    "intercept-stdout": "^0.1.2",
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-confetti": "^6.1.0",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-dom": "^17.0.2",
+    "react-modal": "^3.15.1",
+    "react-router-dom": "^6.2.1",
+    "recoil": "^0.7.3-alpha.2"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^6.1.2",
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
+  },
+  "name": "bin",
+  "description": "This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).",
+  "version": "1.0.0",
+  "main": "next.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
